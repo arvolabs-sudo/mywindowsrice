@@ -1,0 +1,534 @@
+/* ===================== */
+/* === COLOR VARIABLES === */
+/* ===================== */
+:root {
+--rosewater: #f5e0dc;
+--flamingo: #f2cdcd;
+--pink: #f5c2e7;
+--mauve: #cba6f7;
+--red: #f38ba8;
+--maroon: #eba0ac;
+--peach: #fab387;
+--yellow: #f9e2af;
+--green: #a6e3a1;
+--teal: #94e2d5;
+--sky: #89dceb;
+--sapphire: #74c7ec;
+--blue: #89b4fa;
+--lavender: #b4befe;
+
+```
+--dynamic-accent: #404251;
+--dynamic-surface: #000001;
+--dynamic-crust: #000000;
+
+--text: #cdd6f4;
+--subtext1: #bac2de;
+--subtext0: #a6adc8;
+
+--overlay2: #9399b2;
+--overlay1: #7f849c;
+--overlay0: #6c7086;
+
+--surface2: #585b70;
+--surface1: #45475a;
+--surface0: #282936;
+
+--base: #1e1e2e;
+--mantle: rgba(24, 24, 37, 0.60);
+--crust: var(--dynamic-crust);
+```
+
+}
+
+/* ================= */
+/* === BASE === */
+/* ================= */
+
+* {
+  font-size: 11px;
+  color: var(--subtext0);
+  font-weight: 700;
+  font-family: "JetBrainsMono NFP";
+  margin: 0;
+  padding: 0;
+  }
+
+/* ================= */
+/* === BAR === */
+/* ================= */
+
+.yasb-bar {
+padding: 0;
+margin: 0;
+background: rgba(30, 30, 46, 1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+}
+
+/* ================= */
+/* === GLOBAL WIDGETS === */
+/* ================= */
+
+.widget {
+padding: 0 6px;
+margin: 0 3px;
+}
+
+.widget .label {
+padding: 0 2px;
+}
+
+.widget .label.alt {
+padding: 0 2px;
+}
+
+.widget:hover {
+background: rgba(255,255,255,0.05);
+border-radius: 4px;
+}
+
+.icon {
+font-size: 13px;
+margin-right: 3px;
+}
+
+.right .widget-container {
+margin-left: 8px;
+}
+
+.right .widget:last-child {
+margin-right: 0;
+}
+
+/* ================= */
+/* === CLOCK === */
+/* ================= */
+
+.clock-widget {
+background: transparent;
+margin: 0 4px;
+border-radius: 4px;
+border: none;
+}
+
+.clock-widget .icon {
+font-size: 13px;
+color: var(--sky);
+}
+
+.clock-widget .label {
+font-size: 12px;
+font-weight: 700;
+color: var(--text);
+}
+
+/* ================= */
+/* === WORKSPACES === */
+/* ================= */
+
+.glazewm-workspaces {
+background: transparent;
+margin: 0 4px;
+border-radius: 4px;
+border: none;
+}
+
+.glazewm-workspaces .ws-btn {
+font-size: 12px;
+border: none;
+color: var(--overlay0);
+padding: 0 6px;
+}
+
+.glazewm-workspaces .ws-btn.active_populated,
+.glazewm-workspaces .ws-btn.active_empty {
+color: var(--blue);
+font-weight: 900;
+}
+
+.komorebi-workspaces {
+background: transparent;
+margin: 0 4px;
+border-radius: 4px;
+border: none;
+}
+
+.komorebi-workspaces .ws-btn {
+font-size: 12px;
+border: none;
+color: var(--overlay0);
+padding: 0 6px;
+}
+
+.komorebi-workspaces .ws-btn.active {
+color: var(--blue);
+font-weight: 900;
+}
+
+/* ================= */
+/* === HOME === */
+/* ================= */
+
+.home-widget {
+padding: 0 6px;
+}
+
+.home-widget .icon {
+font-size: 16px;
+color: var(--subtext1);
+}
+
+/* ================= */
+/* === MEDIA === */
+/* ================= */
+
+.media-widget {
+padding-left: 6px;
+margin: 0 2px;
+}
+
+.media-widget .label {
+color: var(--text);
+padding-left: 6px;
+padding-right: 2px;
+font-size: 11px;
+}
+
+.media-widget .btn {
+color: var(--overlay1);
+padding: 0 3px;
+margin: 0;
+font-family: "Segoe Fluent Icons";
+font-weight: 400;
+}
+
+.media-widget .btn:hover {
+color: var(--text);
+}
+
+.media-widget .btn.play {
+font-size: 14px;
+}
+
+.media-widget .btn.disabled,
+.media-widget .btn.disabled:hover {
+color: #4e525c;
+background: transparent;
+}
+
+.media-widget .progress-bar {
+max-height: 2px;
+background: transparent;
+margin-left: 4px;
+border: none;
+}
+
+.media-widget .progress-bar::chunk {
+background: var(--blue);
+border-radius: 1px;
+}
+
+/* ================= */
+/* === MEDIA MENU === */
+/* ================= */
+
+.media-menu {
+min-width: 420px;
+max-width: 420px;
+background: rgba(24, 24, 37, 0.85);
+border: 1px solid rgba(255,255,255,0.06);
+}
+
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+margin-left: 10px;
+font-family: "Segoe UI";
+}
+
+.media-menu .title {
+font-size: 13px;
+color: var(--text);
+}
+
+.media-menu .artist {
+font-size: 11px;
+color: var(--overlay1);
+}
+
+.media-menu .source {
+font-size: 10px;
+padding: 2px 4px;
+}
+
+.media-menu .btn {
+font-family: "Segoe Fluent Icons";
+font-size: 13px;
+font-weight: 400;
+
+```
+min-width: 34px;
+max-width: 34px;
+
+min-height: 34px;
+max-height: 34px;
+
+border-radius: 4px;
+```
+
+}
+
+.media-menu .btn:hover {
+background: rgba(255,255,255,0.08);
+}
+
+.media-menu .btn.play {
+font-size: 16px;
+}
+
+.media-menu .playback-time {
+font-size: 11px;
+color: var(--overlay1);
+}
+
+.media-menu .progress-slider {
+height: 8px;
+}
+
+.media-menu .progress-slider::groove {
+background: rgba(255,255,255,0.10);
+height: 2px;
+}
+
+.media-menu .progress-slider::sub-page {
+background: var(--blue);
+height: 2px;
+}
+
+/* ================= */
+/* === MENUS === */
+/* ================= */
+
+.home-menu,
+.audio-menu,
+.calendar,
+.disk-group {
+background: rgba(24,24,37,0.85);
+border: 1px solid rgba(255,255,255,0.06);
+}
+
+.home-menu .menu-item {
+padding: 8px 20px 8px 10px;
+}
+
+.home-menu .menu-item:hover {
+background: rgba(255,255,255,0.08);
+border-radius: 4px;
+}
+
+/* ================= */
+/* === GROUPER === */
+/* ================= */
+
+.systeminfo-grouper {
+margin: 0 4px;
+}
+
+.memory-widget,
+.disk-widget,
+.gpu-widget,
+.battery-widget {
+padding: 0 5px;
+}
+
+/* ================= */
+/* === WIFI === */
+/* ================= */
+
+.wifi-widget .icon {
+color: var(--yellow);
+}
+
+/* ================= */
+/* === VOLUME === */
+/* ================= */
+
+.volume-widget .icon {
+color: var(--blue);
+}
+
+/* ================= */
+/* === POWER === */
+/* ================= */
+
+.power-menu-widget .label {
+color: var(--red);
+font-size: 12px;
+}
+
+/* ================= */
+/* === POWER MENU === */
+/* ================= */
+
+.power-menu-popup {
+    background: transparent;
+}
+
+.power-menu-popup .button {
+    width: 140px;
+    height: 180px;
+
+    margin: 2px;
+
+    background: rgba(24,24,37,0.90);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 4px;
+}
+
+.power-menu-popup .button.hover {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+}
+
+.power-menu-popup .button .icon {
+    font-size: 42px;
+    padding-top: 18px;
+    color: var(--text);
+}
+
+.power-menu-popup .button .label {
+    font-size: 12px;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.power-menu-popup .button.cancel {
+    height: 28px;
+    border-radius: 4px;
+}
+
+.power-menu-popup .button.cancel .label {
+    color: var(--red);
+}
+
+/* ================= */
+/* === CALENDAR === */
+/* ================= */
+
+.calendar {
+    background: rgba(24,24,37,0.90);
+}
+
+.calendar .day-label,
+.calendar .month-label {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.calendar .date-label {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--blue);
+    margin-top: -10px;
+}
+
+.calendar .calendar-table::item:selected {
+    background: var(--blue);
+    color: var(--base);
+    border-radius: 4px;
+}
+
+/* ================= */
+/* === DISK MENU === */
+/* ================= */
+
+.disk-group-row {
+    min-width: 220px;
+    max-width: 220px;
+
+    border-radius: 4px;
+
+    border: 1px solid transparent;
+}
+
+.disk-group-row:hover {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.disk-group-label-bar {
+    border-radius: 2px;
+}
+
+.disk-group-label-bar::chunk {
+    border-radius: 2px;
+}
+
+/* ================= */
+/* === AUDIO MENU === */
+/* ================= */
+
+.audio-container .device {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.audio-container .device:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.audio-container .device.selected {
+    background: rgba(255,255,255,0.10);
+}
+
+/* ================= */
+/* === POPUPS === */
+/* ================= */
+
+.home-menu,
+.audio-menu,
+.calendar,
+.disk-group,
+.media-menu {
+    border-radius: 4px;
+}
+
+/* ================= */
+/* === POLISH === */
+/* ================= */
+
+.cava {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.cava .widget {
+    padding: 0;
+}
+
+.active-window-widget {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.active-window-widget .label {
+    color: var(--text);
+}
+
+.battery-widget .icon {
+    color: var(--green);
+}
+
+.memory-widget .icon {
+    color: var(--mauve);
+}
+
+.disk-widget .icon {
+    color: var(--teal);
+}
+
+.gpu-widget .icon {
+    color: var(--peach);
+}
