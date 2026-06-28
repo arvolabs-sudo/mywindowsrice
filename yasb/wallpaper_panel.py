@@ -5,8 +5,8 @@ from tkinter import Tk, Frame, Label, Canvas, Scrollbar
 from PIL import Image, ImageTk
 from colorthief import ColorThief
 
-WALLPAPER_DIR = r"D:\Pictures\Wallpapers and other\Desktop Wallpapers"
-CSS_FILE = r"C:\Users\Arnav\.config\yasb\styles.css"
+WALLPAPER_DIR = r"D:\Pictures\Wallpapers and other\Desktop Wallpapers" # Set this path to the folder containing wallpapers.
+CSS_FILE = r"C:\Users\{username}\.config\yasb\styles.css" # Replace {username} with your Username
 
 SPI_SETDESKWALLPAPER = 20
 
