@@ -80,7 +80,9 @@ widgets:
     options:
       label: "󰋫"
       callbacks:
-        on_left: "exec python C:\\Users\\Arnav\\.config\\yasb\\wallpaper_panel.py"
+        on_left: "exec python C:\\Users\\{username}\\.config\\yasb\\wallpaper_panel.py"
+
+        # Replace {username} with your PC's Username.
 
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
@@ -133,7 +135,7 @@ widgets:
       label: "<span>\uf017</span>{%H:%M}"
       label_alt: "<span>\uf017</span>{%A, %B %d. %Y %H:%M}"
       locale: "en-US"
-      timezones: ["Asia/Kolkata"]
+      timezones: ["Asia/Kolkata"] #Set your timezone.
       calendar:
         round_corners: true
         round_corners_type: "small"
@@ -151,7 +153,7 @@ widgets:
       ethernet_icon: "\uf108"
       update_interval: 5000
       callbacks:
-        on_left: "exec powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File C:\\Users\\Arnav\\.config\\yasb\\wifi_popup.ps1"
+        on_left: "exec powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File C:\\Users\\{username}\\.config\\yasb\\wifi_popup.ps1" #Here too
         on_middle: "do_nothing"
         on_right: "toggle_label"
       wifi_icons: [
