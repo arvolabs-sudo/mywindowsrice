@@ -262,7 +262,7 @@ keybindings:
   - commands: ['shell-exec wt']
     bindings: ['alt+enter']
 
-  - commands: ['shell-exec cmd /c start "" "C:\\Users\\Arnav\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"']
+  - commands: ['shell-exec cmd /c start "" "C:\\Users\\{username}\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"'] #Replace {username} if you use Brave, or add the browser path here.
     bindings: ['alt+b']
 
   - commands: ['shell-exec explorer']
