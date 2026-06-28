@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "properties": {
+            "style": "full"
+          },
+          "foreground": "#cdd6f4",
+          "background": "#1e1e2e"
+        }
+      ]
+    }
+  ]
+}
