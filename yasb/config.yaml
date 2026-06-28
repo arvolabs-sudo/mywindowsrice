@@ -1,3 +1,5 @@
+# Replace {username} with your Username. Also Set your timezone.
+
 watch_stylesheet: true
 watch_config: true
 debug: false
