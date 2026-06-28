@@ -1,4 +1,5 @@
 # Minimal profile: UTF‑8 + Oh My Posh (if installed) + Fastfetch with explicit config path
+# Replace {username} with your username.
 try {
     [Console]::InputEncoding  = [System.Text.Encoding]::UTF8
     [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -10,7 +11,7 @@ Clear-Host
 
 # Force Fastfetch to use YOUR config every time (bypass path confusion)
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
-    fastfetch -c "C:/Users/Arnav/.config/fastfetch/config.jsonc"
+    fastfetch -c "C:/Users/{username}/.config/fastfetch/config.jsonc"
 }
 
-oh-my-posh init pwsh --config "C:\Users\Arnav\.config\oh-my-posh\minimal-path.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\{username}\.config\oh-my-posh\minimal-path.omp.json" | Invoke-Expression
